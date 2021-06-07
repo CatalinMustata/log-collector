@@ -1,7 +1,7 @@
 import Logger from "./logger"
 import LogMessage from "objects/LogMessage"
 import * as config from "config"
-import * as uWS from "uWebsockets.js"
+import * as uWS from "uWebSockets.js"
 
 const textDecoder = new TextDecoder()
 
