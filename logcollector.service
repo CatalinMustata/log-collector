@@ -1,0 +1,14 @@
+[Unit]
+Description=Log Collector Service
+After=network.target
+
+[Service]
+ExecStart=npm run start
+WorkingDirectory=/home/pi/log-collector
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
